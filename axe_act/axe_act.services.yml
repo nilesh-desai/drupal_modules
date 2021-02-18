@@ -1,0 +1,5 @@
+services:
+  axe_act.route_subscriber:
+    class: Drupal\axe_act\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

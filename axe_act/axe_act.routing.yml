@@ -1,0 +1,11 @@
+axe_act.page_json:
+  path: '/page_json/{apikey}/{node}'
+  defaults:
+    _controller: '\Drupal\axe_act\Controller\PageJsonController::response'
+    _title: 'Json Data of the page'
+  requirements:
+    _custom_access: '\Drupal\axe_act\Controller\PageJsonController::access'
+  options:
+    parameters:
+      node:
+        type: entity:node
